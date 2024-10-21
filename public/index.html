@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Uso de Sockets</title>
+</head>
+<body class="cuerpo">
+    <div id="panel-bienvenida">
+        <h2>Bienvenid@ a mi WhatsApp</h2>
+        <input type="text" name="" id="persona"> <br>
+        <button onclick="ingresarAlChat()">Ingresar</button>
+    </div>
+
+    <div id="app-chat">
+        <h2 class="nube box">Chat en vivo</h2>
+        <div id="ventana-mensajes">
+            <div id="output"></div>
+            <div id="escribiendo-mensaje"></div>
+        </div>
+        <input type="text" id="usuario"><br>
+        <input type="text" id="mensaje"><br>
+        <button id="enviar">Enviar</button>
+    </div>
+    <script src="socket.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
